@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="pl" data-theme="noir">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0c0a09">
+  <meta name="description" content="Rezerwacja wizyty w Beauty Secret JK — salon fryzjersko-kosmetyczny w Łodzi. Wyślij formularz, a my potwierdzimy termin.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Rezerwacja — Beauty Secret JK">
+  <meta property="og:description" content="Umów wizytę w Beauty Secret JK. Formularz rezerwacji online.">
+  <meta property="og:locale" content="pl_PL">
+  <meta property="og:url" content="https://beautysecretjk.pl/rezerwacja">
+  <link rel="canonical" href="https://beautysecretjk.pl/rezerwacja">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Manrope:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <title>Rezerwacja — Beauty Secret JK</title>
+  <style>
+    :root { --bg:#0c0a09; --bg2:#171311; --text:#f6f1eb; --muted:#9a8f82; --gold:#d6b37c; --border:rgba(214,179,124,.18); --radius:18px; }
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:'Manrope',system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.6;min-height:100vh;display:flex;flex-direction:column}
+    a{color:var(--gold);text-decoration:none}
+    .wrap{width:min(720px,92vw);margin:0 auto;padding:4rem 0 6rem}
+    .back{display:inline-flex;align-items:center;gap:.5rem;margin-bottom:2rem;font-size:.85rem;color:var(--muted)}
+    .back:hover{color:var(--gold)}
+    h1{font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,5vw,3rem);margin-bottom:.5rem}
+    h1 em{font-style:italic;color:var(--gold);font-weight:300}
+    .lead{color:var(--muted);margin-bottom:2.5rem}
+    form{display:flex;flex-direction:column;gap:1.2rem}
+    label{display:flex;flex-direction:column;gap:.4rem;font-size:.85rem;color:var(--muted)}
+    input,select,textarea{padding:.85rem 1rem;border-radius:12px;border:1px solid var(--border);background:rgba(255,255,255,.04);color:var(--text);font:inherit;font-size:.95rem;transition:border-color .3s}
+    input:focus,select:focus,textarea:focus{outline:none;border-color:var(--gold)}
+    textarea{min-height:120px;resize:vertical}
+    .row{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem}
+    @media(max-width:640px){.row{grid-template-columns:1fr}}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:.6rem;padding:.9rem 1.6rem;border-radius:999px;background:linear-gradient(135deg,var(--gold),#e8cfa0);color:#0c0a09;font-weight:600;border:none;cursor:pointer;transition:transform .3s,box-shadow .3s;box-shadow:0 8px 30px rgba(214,179,124,.18)}
+    .btn:hover{transform:translateY(-2px);box-shadow:0 12px 40px rgba(214,179,124,.25)}
+    .note{font-size:.8rem;color:var(--muted);margin-top:1rem}
+    .contact-alt{margin-top:3rem;padding:1.6rem;border:1px solid var(--border);border-radius:var(--radius);background:rgba(255,255,255,.03)}
+    .contact-alt h2{font-family:'Cormorant Garamond',serif;font-size:1.4rem;margin-bottom:.6rem}
+    .contact-alt p{color:var(--muted);font-size:.9rem;margin-bottom:.8rem}
+    .contact-alt a{display:inline-block;margin:.3rem .6rem .3rem 0;padding:.5rem 1rem;border:1px solid var(--border);border-radius:999px;font-size:.85rem;transition:border-color .3s,color .3s}
+    .contact-alt a:hover{border-color:var(--gold);color:var(--gold)}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <a class="back" href="/">← Powrót do Beauty Secret JK</a>
+    <h1>Umów swój <em>rytuał</em></h1>
+    <p class="lead">Wypełnij formularz — potwierdzimy termin telefonicznie lub mailowo. Możesz też zadzwonić bezpośrednio: <a href="tel:+48502755887">502 755 887</a>.</p>
+    <form action="mailto:kontakt@beautysecretjk.pl" method="post" enctype="text/plain">
+      <div class="row">
+        <label>Imię i nazwisko<input type="text" name="imie" required placeholder="np. Anna Kowalska"></label>
+        <label>Telefon<input type="tel" name="telefon" required placeholder="+48 500 000 000"></label>
+      </div>
+      <label>E-mail<input type="email" name="email" placeholder="anna@example.com"></label>
+      <div class="row">
+        <label>Usługa<select name="usluga" required>
+          <option value="">Wybierz usługę…</option>
+          <option>Koloryzacja wielowymiarowa</option>
+          <option>Strzyżenie i stylizacja</option>
+          <option>Keratynowe prostowanie</option>
+          <option>Regeneracja i botoks na włosy</option>
+          <option>Manicure i pedicure</option>
+          <option>Oprawa oka (brwi i rzęsy)</option>
+          <option>Konsultacja / diagnoza</option>
+        </select></label>
+        <label>Preferowana data i godzina<input type="text" name="termin" placeholder="np. środa po 18:00"></label>
+      </div>
+      <label>Wiadomość (opcjonalnie)<textarea name="wiadomosc" placeholder="Długość włosów, historia koloryzacji, oczekiwany efekt…"></textarea></label>
+      <button type="submit" class="btn">Wyślij zgłoszenie rezerwacji</button>
+      <p class="note">Formularz otworzy Twój program pocztowy z wypełnioną wiadomością. Jeśli wolisz, zadzwoń: <a href="tel:+48502755887">502 755 887</a>.</p>
+    </form>
+    <div class="contact-alt">
+      <h2>Inne sposoby kontaktu</h2>
+      <p>Możesz też skontaktować się z nami bezpośrednio:</p>
+      <a href="tel:+48502755887">Zadzwoń: 502 755 887</a>
+      <a href="mailto:kontakt@beautysecretjk.pl">Napisz e-mail</a>
+      <a href="https://www.google.com/maps/dir/?api=1&destination=R%C4%85bie%C5%84ska+1%2C+94-227+%C5%81%C3%B3d%C5%BA" target="_blank" rel="noopener">Otwórz nawigację</a>
+    </div>
+  </div>
+</body>
+</html>
